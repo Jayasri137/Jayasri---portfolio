@@ -24,11 +24,11 @@ const projectData = {
       "Hooks",
     ],
     live: "https://dotetrans.com",
-    heroImage: "/src/assets/dotetrans/dotetranz.png",
+    heroImage: "/dotetranz.png",
     gallery: [
-      "/src/assets/dotetrans/3.png",
-      "/src/assets/dotetrans/1.png",
-      "/src/assets/dotetrans/2.png",
+      "/3.png",
+      "/1.png",
+      "/2.png",
     ],
   },
   cookdin: {
@@ -45,8 +45,8 @@ const projectData = {
       "A clean and efficient admin interface that allows administrators to manage the platform with speed and accuracy.",
     tech: ["React JS", "Tailwind CSS", "REST API", "Hooks"],
     live: "#",
-    heroImage: "/src/assets/cookdin/adminsub.jpeg",
-    gallery: ["/src/assets/cookdin/adminsettings.jpeg"],
+    heroImage: "/adminsub.jpeg",
+    gallery: ["/adminsettings.jpeg"],
   },
   connectmeet: {
     title: "Connect & Meet Panel",
@@ -62,7 +62,7 @@ const projectData = {
       "A reliable meeting management system with smooth performance and scalable structure.",
     tech: ["React JS", "Tailwind CSS", "API Integration", "Hooks"],
     live: "#",
-    heroImage: "/src/assets/cookdin/adminpanal.png",
+    heroImage: "/adminpanal.png",
     gallery: [""],
   },
 };

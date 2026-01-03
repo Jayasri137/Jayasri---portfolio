@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const projects = [
-  { id: "dotetrans", title: "DotEtrans Landing Page", image: "/src/assets/dotetrans/dotetranz.png" },
-  { id: "cookdin", title: "Cookdin Admin Panel", image: "/src/assets/cookdin/adminsub.jpeg" },
-  { id: "connectmeet", title: "Connect & Meet Admin Panel", image: "/src/assets/connect&meet/adminpanal.png" },
+  { id: "dotetrans", title: "DotEtrans Landing Page", image: "/dotetranz.png" },
+  { id: "cookdin", title: "Cookdin Admin Panel", image: "/adminsub.jpeg" },
+  { id: "connectmeet", title: "Connect & Meet Admin Panel", image: "/adminpanal.png" },
 ];
 
 export default function Projects() {
