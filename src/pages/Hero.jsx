@@ -32,7 +32,7 @@ export default function Hero() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="mt-4 text-gray-300 text-sm sm:text-xl md:text-2xl"
       >
-        Junior Front-End Developer | React.js
+        Junior Software Developer | React.js
       </motion.p>
 
       {/* Buttons */}
