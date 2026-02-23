@@ -3,6 +3,155 @@ import { motion } from "framer-motion";
 
 
 const projectData = {
+  preschool: {
+  title: "Bluestone Preschool Website",
+  subtitle: "Institution Website",
+  description:
+    "Bluestone Preschool is a dynamic institutional website designed to showcase programs, admissions, facilities, and activities. The platform delivers a friendly and engaging experience for parents while maintaining strong performance and responsiveness.",
+  goals: [
+    "Provide clear information for parents and admissions",
+    "Create a warm and engaging preschool brand presence",
+    "Develop a responsive and SEO-friendly website",
+  ],
+  outcome:
+    "A fully responsive React-based website with dynamic content management, modern UI, and smooth animations to enhance engagement.",
+  tech: [
+    "React JS",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Node JS",
+    "Express",
+    "MySQL",
+    "Dynamic Image Fetch",
+  ],
+  live: "https://bluestoneinternationalpreschool.com/",
+  heroImage: "/prescl.png",
+  gallery: ["/prescl.png"],
+},
+
+goi: {
+  title: "Bluestone Group of Institutions Website",
+  subtitle: "Multi-Domain Educational Platform",
+  description:
+    "A centralized platform representing multiple Bluestone verticals including Preschool, Overseas Education, IAS Academy, Techpark, Placements, Elite Sports, Language Hub, and Startups. Each domain is structured with scalable architecture and dynamic data handling.",
+  goals: [
+    "Represent multiple institutions under one ecosystem",
+    "Build scalable architecture for future expansion",
+    "Enable domain-wise content management",
+  ],
+  outcome:
+    "A modular React application integrated with backend APIs allowing seamless domain-based data rendering and administration.",
+  tech: [
+    "React JS",
+    "Tailwind CSS",
+    "Node JS",
+    "Express",
+    "MySQL",
+    "REST API",
+    "Responsive Design",
+  ],
+  live: "https://bluestonegroupofinstitutions.com/",
+  heroImage: "/goi.png",
+  gallery: ["/goi.png"],
+},
+
+techpark: {
+  title: "Bluestone Techpark Website",
+  subtitle: "Software Excellence Center Platform",
+  description:
+    "Bluestone Techpark is a technology-focused platform showcasing training programs, services, and innovation initiatives. Built with modern UI patterns and performance-focused architecture.",
+  goals: [
+    "Bridge academia and industry exposure",
+    "Showcase technical programs dynamically",
+    "Deliver high-performance UI with animations",
+  ],
+  outcome:
+    "A visually rich React platform with animation-driven UX and backend-connected data modules.",
+  tech: [
+    "React JS",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Node JS",
+    "Express",
+    "MySQL",
+  ],
+  live: "https://bluestonetechpark.com/",
+  heroImage: "/tech.png",
+  gallery: ["/tech.png"],
+},
+
+sports: {
+  title: "Bluestone Elite Sports Website",
+  subtitle: "Sports Academy Platform",
+  description:
+    "A sports-focused website presenting training programs, achievements, and facilities with strong visual storytelling and mobile-first responsiveness.",
+  goals: [
+    "Promote sports training programs",
+    "Highlight achievements and infrastructure",
+    "Ensure mobile-first performance",
+  ],
+  outcome:
+    "An engaging and responsive website optimized for accessibility and fast performance.",
+  tech: [
+    "React JS",
+    "Tailwind CSS",
+    "Responsive Design",
+    "Dynamic Content Integration",
+  ],
+  live: "https://navajowhite-dragonfly-247965.hostingersite.com/",
+  heroImage: "/elitesport.png",
+  gallery: ["/elitesport.png"],
+},
+
+upsc: {
+  title: "Bluestone UPSC Landing Page",
+  subtitle: "Campaign Landing Page",
+  description:
+    "A focused marketing landing page built for UPSC coaching promotion. Designed using HTML, CSS, and backend connectivity for lead capture and database storage.",
+  goals: [
+    "Generate student leads through campaigns",
+    "Build lightweight, high-speed landing experience",
+    "Store enquiries into MySQL database",
+  ],
+  outcome:
+    "A fast-loading landing page with backend integration for lead management and analytics tracking.",
+  tech: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "MySQL",
+  ],
+  live: "https://upsc.bluestoneiasacademy.com/",
+  heroImage: "/upsc.png",
+  gallery: ["/upsc.png"],
+},
+
+crm: {
+  title: "Bluestone Group CRM System",
+  subtitle: "Multi-Role Lead Management Platform",
+  description:
+    "A centralized CRM developed to manage leads across all Bluestone domains. The system supports hierarchical roles such as Super Admin, Domain Admin, and Users (Staff/Junior Executives).",
+  goals: [
+    "Manage leads across multiple domains in one system",
+    "Provide role-based access control",
+    "Allow domain-specific administration",
+    "Track candidate status and workflow updates",
+  ],
+  outcome:
+    "A scalable CRM where Super Admin oversees all domains, Domain Admins manage their vertical, and Users update candidate progress — functioning like multiple branches under a single tree structure.",
+  tech: [
+    "React JS",
+    "Tailwind CSS",
+    "Node JS",
+    "Express",
+    "MySQL",
+    "Role-Based Authentication",
+    "REST APIs",
+  ],
+  live: "#",
+  heroImage: "/crm.png",
+  gallery: ["/crm.png"],
+},
   dotetrans: {
     title: "DotEtrans Landing Page",
     subtitle: "Corporate Website / Landing Page",
@@ -121,6 +270,26 @@ export default function ProjectDetails() {
             <h2 className="text-2xl font-semibold mb-4">Project Overview</h2>
             <p className="text-gray-300 leading-relaxed">{project.description}</p>
           </motion.div>
+
+          <motion.div
+  variants={itemVariants}
+  className="grid grid-cols-2 sm:grid-cols-3 gap-4"
+>
+  <div className="bg-white/5 p-4 rounded-xl">
+    <p className="text-xs text-gray-400">Category</p>
+    <p className="font-semibold">{project.subtitle}</p>
+  </div>
+
+  <div className="bg-white/5 p-4 rounded-xl">
+    <p className="text-xs text-gray-400">Architecture</p>
+    <p className="font-semibold">Full Stack</p>
+  </div>
+
+  <div className="bg-white/5 p-4 rounded-xl">
+    <p className="text-xs text-gray-400">Type</p>
+    <p className="font-semibold">Production Project</p>
+  </div>
+</motion.div>
 
           <motion.div variants={itemVariants}>
             <h2 className="text-2xl font-semibold mb-4">Project Goals</h2>

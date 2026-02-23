@@ -20,10 +20,10 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight"
-      >
-        Jayasri Murugesan
-      </motion.h1>
+        className="text-5xl md:text-7xl font-black text-white leading-[0.95] tracking-tighter uppercase italic"
+      > JAYASRI
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500"> MURUGESAN</span>
+           </motion.h1>
 
       {/* Subtitle */}
       <motion.p
@@ -50,15 +50,16 @@ export default function Hero() {
         >
           View Projects
         </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
-          whileTap={{ scale: 0.95 }}
-          href="/Jayasri_Murugesan_Resume.pdf"
-          download
-          className="px-6 py-3 border border-white/30 rounded-xl transition-all shadow-sm"
-        >
-          Download Resume
-        </motion.a>
+       <motion.a
+  whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+  whileTap={{ scale: 0.95 }}
+  href="/Jayasri Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 border border-white/30 rounded-xl transition-all shadow-sm"
+>
+  View Resume
+</motion.a>
       </motion.div>
 
       {/* Social Icons */}

@@ -8,8 +8,19 @@ export default function About() {
   ];
 
   const experience = [
-    { role: "React JS Intern", company: "ITBOOMI Innovation", years: "Aug 2025 – Nov 2025", details: "Built React components, integrated APIs, collaborated with UI teams." },
-    { role: "Jr. Order Processing", company: "AKR Industries Pvt Ltd", years: "Mar 2024 – Aug 2025", details: "Managed high-volume orders and optimized workflows." },
+    { 
+  role: "Jr. Software Developer",
+  company: "Bluestone Tech Park",
+  years: "Dec 2025 – Present",
+  details: "Developing full-stack web applications, centralized CRM systems, and dynamic admin dashboards using React.js, Node.js, Express.js, and MySQL."
+},
+  { 
+  role: "React JS Intern",
+  company: "ITBOOMI Innovation",
+  years: "Aug 2025 – Nov 2025",
+  details: "Developed reusable React components, integrated REST APIs, and collaborated with UI/UX teams to build responsive web applications."
+},
+
   ];
 
   return (
@@ -48,8 +59,9 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="flex-1 space-y-6 md:mt-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white">About Me</h2>
-          <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+ <h2 className="text-5xl md:text-7xl font-black text-white leading-[0.95] tracking-tighter uppercase italic">
+            ABOUT <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">ME</span>
+          </h2>          <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
             I’m a Frontend Developer specializing in React.js. I build modern, responsive,
             and high-performance web applications that not only look great but also provide smooth user experiences.
             With a strong foundation in JavaScript, HTML, CSS, and modern frameworks, I focus on writing clean,
